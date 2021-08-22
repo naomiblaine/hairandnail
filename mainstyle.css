@@ -1,0 +1,281 @@
+
+
+
+
+
+/* font on home page */
+
+body{
+	margin: 0;
+	font-family: sans-serif;
+	font-size: 17px;
+	color: dimgrey;
+	
+}
+
+/* Brick background code*/
+
+#mainbg{
+	background-image:url(GREYBRICKWALLPAPER.jpg);
+	background-size:cover;
+	background-position:center;
+	height: 100vh;
+	display:flex;
+	flex-direction:column;
+	justify-content:center;
+	align-items:center;
+	text-align:center;
+	padding:0 20px;
+}
+
+#pricingbg{
+		background-image:url(GREYBRICKWALLPAPER.jpg);
+		background-size: cover;
+		background-position: center;
+		height: 100vh;
+		display: flex;
+}
+
+#contactbg{
+	   background-image:url(GREYBRICKWALLPAPER.jpg);
+		background-size: cover;
+		background-position: center;
+		height: 100vh;
+		display: flex;
+}
+
+#aboutbg{
+	   background-image:url(GREYBRICKWALLPAPER.jpg);
+		background-size: cover;
+		background-position: center;
+		height: 100vh;
+		display: flex;
+		
+}
+
+
+/* Navigation styling */
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: lightgrey;
+}
+
+
+li {
+   float: left;
+}
+
+li a {
+	display: block;
+	color: black;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+}
+
+/* change the link color on hover*/
+
+li a:hover {
+	background-color: white;
+}
+
+/* contact form stylesheet */
+
+@import url('https://fonts.googleapis.com/css2?family=Allison&display=swap');
+ 
+ *{
+ 	margin: 0;
+ 	padding: 0;
+ 	user-select: none;
+ }
+
+body{
+	font-family: 'Allison', cursive;
+}
+
+.wrapper{
+	width: 100%;
+	max-width: 680px;
+	margin: 100px auto 0;
+	padding: 20px;
+	box-sizing: border-box;
+}
+
+.content{
+	text-align: center;
+}
+
+.content h1{
+	letter-spacing: 1px;
+
+}
+
+.form{
+	width: 100%;
+	margin: 15px 0;
+}
+
+.top-form,
+.middle-form,
+.bottom-form{
+	width: 100%;
+	min-height: 45px;
+	margin: 10px 0;
+	overflow: hidden;
+}
+
+.form input[type="text"],
+.form textarea{
+	padding: 10px 2px;
+	box-sizing: border-box;
+	width: 100%;
+	border: 2px solid #fff;
+	border-radius: 2px;
+	outline: none;
+	transition: all 0.2s ease;
+
+}
+
+.form input:focus,
+.form textarea:focus{
+	border-color: darkslategrey;
+	box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.0125),
+	0 0 8px rgba(76,161,175, 0.05)
+}
+.form .label{
+	margin-bottom: 5px;
+	text-transform: capitalize;
+}
+
+.top-form .inner-form{
+	width: 29.9%;
+	float: left;
+	margin-right: 5%;
+}
+.top-form .inner-form: last-child{
+	margin-right: 0;
+}
+
+middle-form{
+	clear: both;
+}
+
+.btn{
+	background: darkslategrey;
+	width: 200px;
+	padding: 10px 0;
+	border-radius: 2px;
+	text-align: center;
+	text-transform: uppercase;
+	color: whitesmoke;
+	cursor: pointer;
+}
+
+::-webkit-input-placeholder{
+	font-family: 'Allison', cursive;
+	text-transform: capitalizes;
+}
+
+
+::-moz-input-placeholder{
+	font-family: 'Allison', cursive;
+	text-transform: capitalizes;
+}
+
+::-ms-input-placeholder{
+	font-family: 'Allison', cursive;
+	text-transform: capitalizes;
+}
+
+@media screen and (max-width: 460px){
+	.wrapper{
+		margin: 25px auto 0;
+	}
+	.top-form .inner-form{
+		width: 100%;
+		margin: 5px 0;
+	}
+
+}
+
+
+
+
+/* image slider on about page*/
+
+.slide-container {
+	width: 800px;
+	height: 600px;
+	margin-left: auto;
+	margin-right: auto;
+	overflow: hidden;
+	text-align: center;
+
+}
+
+.image-container {
+	width: 2400px;
+	height: 600px;
+	position: relative;
+	transition: left 2s;
+	-webkit-transition: left 2s;
+	-moz-transition: left 2s;
+	-o-transition: left 2s;
+}
+
+.slider-image {
+	float: left;
+	margin: 0px;
+	padding: 0px;
+
+}
+
+.button-container {
+	top: -20px;
+	position: relative;
+}
+
+.slider-button {
+	display: inline-block;
+	height: 10px;
+	width: 10px;
+	border-radius: 5px;
+	background-color: whitesmoke;
+}
+
+#slider-image-1:target ~ .image-container{
+	left: 0px;
+}
+
+#slider-image-2:target ~ .image-container{
+	left: -800px;
+}
+
+#slider-image-3:target ~ .image-container{
+	left: -1600px;
+}
+
+#slider-image-4:target ~ .image-container{
+	left: -2400px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
